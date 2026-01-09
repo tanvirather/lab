@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-nginx-deployment # deployment name
+  name: myapi-deployment # deployment name
   labels:
-    name: my-nginx-deployment
-  namespace: my-namespace # namespace
+    name: myapi-deployment
+  namespace: myapp-namespace # namespace
 spec:
   replicas: 3 # number of replicas
   selector:
     matchLabels:
-      app: my-nginx-deployment
+      app: myapi-deployment
   template:
     metadata:
       labels:
-        app: my-nginx-deployment
+        app: myapi-deployment
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.29.4
+      - name: cs-api
+        image: tzather/cs-api:v1
         ports:
         - containerPort: 80

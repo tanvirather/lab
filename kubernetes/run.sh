@@ -11,6 +11,8 @@ service="${product}-service"
 clear
 # minikube delete # Delete existing minikube cluster
 # minikube start # Start minikube cluster
+# rm -rf $dir
+# mkdir -p $dir
 
 ################################################## namesapce ##################################################
 # kubectl create namespace $namespace --dry-run=client --output yaml > $dir/namespace.yaml # Create namespace yaml file
@@ -31,6 +33,13 @@ clear
 # kubectl delete service $service # Delete existing service
 # kubectl apply --filename $dir/service.yaml # Apply the file
 # kubectl get services -o wide # List services
+
+
+
+
+
+
+
 
 ################################################## logs ##################################################
 # kubectl logs deployment/${deployment} --follow=true --tail=10 # Stream logs from all pods in the deployment
