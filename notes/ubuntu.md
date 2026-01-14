@@ -4,9 +4,15 @@
 ```sh
 sudo apt update
 sudo apt upgrade --yes
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # keygen
+ssh-keygen -t rsa -b 4096 -C "tanvirather@zuhid.com" # keygen
 git config --global user.name "Tanvir Ather"
 git config --global user.email  "tanvirather@zuhid.com"
+```
+
+## Install build-essential
+```sh
+sudo apt install build-essential
+sudo apt install curl
 ```
 
 ## [Install Docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
@@ -58,4 +64,22 @@ minikube addons enable metrics-server
 minikube addons enable ingress
 minikube addons list
 minikube start
+```
+
+# [Install Dotnet]
+```sh
+wget https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+sudo apt update
+sudo apt install -y zlib1g
+sudo apt update
+sudo apt install -y dotnet-sdk-10.0
+# dotnet --list-sdks
+```
+
+## [Install nodejs, npm,](https://github.com/nodesource/distributions#debinstall)
+```sh
+curl -fsSL https://deb.nodesource.com/setup_24.x | sudo bash -
+sudo apt-get install -y nodejs
 ```

@@ -1,0 +1,33 @@
+{
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.indentSize": 2,
+  "editor.insertSpaces": true,
+  "editor.renderFinalNewline": "on",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 200,
+  "files.exclude": {
+    "**/.git": true,
+    "**/bin": true,
+    "**/node_modules": true,
+    "**/obj": true,
+    "**/package-lock.json": true,
+  },
+  "files.watcherExclude": {
+    "**/.git": true,
+    "**/bin": true,
+    "**/node_modules": true,
+    "**/obj": true,
+    "**/package-lock.json": true,
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/bin": true,
+    "**/node_modules": true,
+    "**/obj": true,
+    "**/package-lock.json": true,
+  },
+  "dotnet.automaticallyCreateSolutionInWorkspace": false
+}
