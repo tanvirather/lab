@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ################################################## variables ##################################################
-postgres_image="postgis/postgis:17-master"
+postgres_image="postgis/postgis:16-3.5"
 mysql_image="mysql:9.1.0"
 mailhog_image="mailhog/mailhog:latest"
 ollama_image="ollama/ollama"
@@ -59,8 +59,9 @@ mailhog_install(){
 }
 
 ollama_install(){
+  # https://hub.docker.com/r/ollama/ollama
   # open in http://localhost:11434
-  docker run --name ollama --publish 11434:11434 --detach  $ollama_image
+  docker run --name ollama --publish 11434:11434 --detach $ollama_image
   # --volume ollama:/root/.ollama
 }
 
