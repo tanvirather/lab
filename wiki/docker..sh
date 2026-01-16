@@ -75,7 +75,7 @@ text_to_speech_install(){
 
 display_all(){
   docker image ls --format "table {{.Repository}}"
-  docker container ls --all --format "table {{.Names}}   {{.Image}}"
+  docker container ls --all #--format "table {{.Names}}   {{.Image}}"
 }
 
 ################################################## execute ##################################################
