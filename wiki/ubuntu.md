@@ -69,8 +69,9 @@ sudo apt install -y dotnet-sdk-10.0
 # dotnet --list-sdks
 ######################### Dotnet End
 
-######################### Python 
-sudo apt install -y python3-venv # install venv
+######################### Python
+sudo apt update
+sudo apt install -y python3 python3-venv python3-pip
 ######################### Python End
 
 # [Install nodejs, npm](https://github.com/nodesource/distributions#debinstall)
