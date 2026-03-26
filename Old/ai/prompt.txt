@@ -1,0 +1,1 @@
+echo "Write a hello world program in C#" > prompt.txt
