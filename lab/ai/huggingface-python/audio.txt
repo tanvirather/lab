@@ -1,0 +1,4 @@
+Change Voice: To use a specific installed voice, use the -eval flag:
+text2wave -o audio.wav -eval '(voice_kal_diphone)' input.txt.
+Different Formats: While .wav (RIFF) is the default, you can specify other types (like snd, aiff, or nist) using the -otype flag:
+text2wave input.txt -otype snd -o output.snd 
