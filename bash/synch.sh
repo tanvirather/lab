@@ -2,9 +2,17 @@
 
 ################################################## variables ##################################################
 ado=(
-  "repo_1"
-  "repo_2"
-  "repo_3"
+  "crowdilm"
+  "lab"
+  "old"
+  "template"
+  "work"
+)
+
+github=(
+  "crowdilm"
+  "lab"
+  "template"
 )
 
 ################################################## methods ##################################################
@@ -46,5 +54,5 @@ git_daily() {
 ################################################## execute ##################################################
 
 clear
-git_daily "git@ssh.dev.azure.com:v3/ORGANIZATION/PROJECT" "ado" ${ado[@]}
-
+git_daily "git@ssh.dev.azure.com:v3/tzather/zuhid" "ado" ${ado[@]}
+git_daily "git@github.com:tanvirather" "github" ${github[@]}
